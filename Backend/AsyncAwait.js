@@ -68,5 +68,5 @@ async function f() {
   
   }
 It was assume await statement won't block it will move to next statement, which was not the case. It will happen in normal
-callback function if await is not there. The main aim of await is to block this statement unti promise gets resolved.  
+callback function if await is not there. The main aim of await is to block this statement until promise gets resolved.  
 

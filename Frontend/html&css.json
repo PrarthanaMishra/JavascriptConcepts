@@ -1,0 +1,120 @@
+Html and Css
+
+Tags: header,footer,select(option),forms(checkbox),span,nav,ol,li,labels
+ In a process of creating a webGallery..
+ Why we add min.js or css file- bec it’s a minified version for faster loading.
+ Minified version is created after making variables name replaced by some character like that.
+ Minified version can be created using grunt.
+ There are two bootstrap one is angular ui and other the basic one. Basic one has css which   supports in angularjs but js file doesn’t have support so, a abstract layer is created which is angular ui which support this.
+Sequence of importing js file matters.
+We have to use ejs template.
+Single page application means server will give response to index.ejs and from their html pages are rendered
+Note:
+global default font-size is 14px, with a line-height of 1.428
+ Topics covered:
+  Css Bootstrap:
+     1. Container,container-fluid
+     2. Grid system(col-xs-,col-xs-pull-,clearfix visible-xs-block,col-xs-offset)
+  3. Headings(small),lead,mark,ins,em,strong
+   4.Aignments:text-left,text-right,text-center,text-justify,text-nowrap
+  5.Transformation classes:text-lowercase,text-uppercase,text-captialize
+  6.Abbreviations:<abbr title=””>,intialism
+  7.Addresses:<address>
+  8.Blockquotes:<blockquotes> <p><footer>,<cite>.blackquote-reverse
+  9.description:<dl><dd><dt>
+ 10.&lt &gt <code> -inline <kbd>,<pre> pre-scrollable,<var>,table table-bordered"
+  <samp><tbody> table table-striped,table table-hover,"table table-condensed
+   active,success,warning,danger,info,overflow-y: hidden
+11.Form:form-group,form-inline,form-control input type=checkbox,input-group,input-group-addon <textarea>,<fieldset disabled>,readonly,has-error,has-warning,has-success,has-feedback,glyphicon-ok,input-lg"
+input-dm
+
+
+9th May, 2018
+
+https://learn.shayhowe.com/
+
+<!DOCTYPE html> - This line informs browser which version of html being used
+
+         <link>
+        <embed>
+       <source>
+      <meta>
+      <wbr>
+     <param>
+
+Common html terms
+elements, tags and attributes
+Common css terms
+	Selectors, properties, values
+
+Type selector
+Class selector
+Id selector
+
+Why do css reset? - To support cross browser compatibility
+Eg : Eric Meyer’s reset
+
+<p> hold semantic value while <div> doesn’t hold semantic value.
+Semantic value means it has some meaning
+HTMl5 got some structured value elements
+<header> <section> <article> <aside> <footer>
+Difference - <header> vs. <head> vs. <h1> through <h6> Elements
+All styles will cascade from the top of our style sheet to the bottom of our style sheet. = Cascade properties(override by next style)
+Specificity - Id selector has highest and type selector has lowest
+1-0-0 : id : class : type
+0 - 0 -1  : first means high selector preference 2nd means medium preferences 3rd means low prefernces
+No matter where all id selector has been used. It will take override type selector. In that order doesn’t matter. Top css will remain same
+My q : Where  to use type selector then?
+
+Combining selectors
+.hotdog .musturd -  will be applied to any element with the class value hotdog and musturd
+.hotdog p.musturd - will be read from right to left, will select p under hotdog class
+
+Higher the specificty weight more chances of cascade break
+pixels, percentages, and em units are mostly used relative fonts
+
+Block level - takes whole width regardless of content
+Inline-level - takes space as required by content
+
+Display property can be changed by just setting 
+P : {
+Display : block
+}
+
+P: {
+Display : inline
+}
+P : {
+Display : inline-block //will display inline with other elements won’t start with the new line
+}
+Silghtly small difference exists between two inline block
+Inline-level elements cannot have a fixed size
+Width and height are only relevant to non inline element
+ Margins only work horizontally—left and right—on inline-level elements. Padding works on all four sides of inline-level elements
+Margin : have to put all sides
+Margin-top ; have to put only one side
+For margins we see color of parent element
+For padding we see color of element to which padding is applied
+border-bottom-width: 12px;
+ border-radius property identifies by which value corner of box will be rounded
+border-top-right-radius: 5px;
+Css3 introduced box sizing property  with values content-box, padding-box, and border-box
+For vendor specific we can write like 
+-webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+ 
+ 12th July, 2018
+https://ilovecoding.org/courses/htmlcss/lessons/understanding-html
+
+13th July, 2018
+https://learn.freecodecamp.org/
+
+Html 5 introduces :
+Header,footer,nav,video,section- Easier to read and used for search engine optimization(SEO)
+Main - helps to find main content in the page 
+
+24th July, 2018
+Build Responsive Real World Websites with HTML5 and CSS3
+
+         
