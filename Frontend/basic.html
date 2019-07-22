@@ -12,6 +12,7 @@
     <title>
       Basics of html
     </title>
+    <base target="_blank"> <!-- It will open all link in a new tab-->
   </head>
   <body>
     <pre> <!-- Pre tag is used for predefined text structure. Whatever we will write there it will be used like that -->
@@ -24,16 +25,116 @@
     <hr>
     registered trademark symbol &#174
     <hr>
+    <a href = "#colors"> bookmark </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     Trademark symbol &#8482
     <!-- Lists -->
-    <ol >
+    <ol type ="A">
       <li> </li>
     </ol>
-    <form>
-      <input type ="text", name = "" />
-      <input type = "checkbox", name = "" />
-      <input type = "radio", name =""/>
+    My unordered List :
+    <ul style = "list-style-type : square">
+      <li> firstItem
+      </li>
+      <li> second item </li>
+    </ul>
+    Our Most Popular Tutuorials:
+    <ul>
+      <li> QuickBooks </li>
+      <li> Peachtree </li>
+      <li> Microsoft office </li>
+        <ul style = "list-style-type : circle"> 
+          <li> Access </li>
+          <li> Excel </li>
+        </ul>
+      <li> Photoshop </li>
+    </ul>
+    <!-- Dictionary definition tag -->
+    <dl>
+      <dt> Acesss </dt>
+      <dd> create database program and track </dd>
+      <dt> Excel </dt>
+      <dd> Perform calculations </dd>
+    </dl>
+    <!-- Hyperlinks -->
+    text link
+    <a href = "https://www.google.com" > Google </a> <!--  target = blank will open the link different tab-->
+    Image link 
+    <img src = "https://" width = "325px",height = "25%" alt = "image alterantive text"> Image link </a>
+    <!--Navigation in the same page-->
+    <p id = "colors">come at this bookmarks </p>
+    Email link:-
+    <a href ="mailto:theprarthana@gmail.com?subject=testm %20Ail%20" > Email Us </a>
+    <!-- pdf file link-->
+    <a href = "http://www.pdf995.com/samples/pdf.pdf"> see a sample pdf </a>
+    <table border = "6px">
+      <th> Available colors </th>
+      <tr>
+        <td> Red </td>
+        <td> Blue </td>
+        <td> White </td>
+      </tr>
+      <tr>
+        <td> Green </td>
+        <td> Gold </td>
+        <td> Silver </td>
+      </tr>
+    </table>
+<!-- IFrame used to incorporate other webpage -->
+<iframe name = "iframe1"  width="100%", height = "300px"> </iframe>
+<a href = "https://en.wikipedia.org/wiki/Website" target = "iframe1"> wikipedia </a>
+    <form method = "post" enctype = "text/plain" action ="mailto:theprarthana@gmail.com" >
+      <br> You full name :
+      <input type ="text", name = "fullname" size = "50" maxlength="20" />
+      <br> Comment :
+      <textarea name = "text area" rows = "15" cols="75" wrap="hard" ></textarea>
+      <br>
+      <input type = "checkbox", name = "purchase" value = "yes" /> yes
+      <input type = "checkbox" name ="purchase" value = "no"/> No
+      <br> Which describes your status
+      <select name = "status" size = "1">
+        <option name = "Business"> Business </option>
+        <option name = "goverment"> goverment </option>
+      </select>
+      <br>
+      <input type = "radio", name ="source" value ="tv" tabindex="2"/> TV
+      <input type = "radio" name = "source" value = "source" tabindex="4" /> radio
+      <input type = "radio" name = "source" value = "internet" tabindex="5" /> Internet
+      <br>
+      <input type = "submit" value = "submit" />
+      <br>
+      <input type = "reset" value = "reset" />
     </form>
-
+<!-- Adding video and audio files in html page -->
+<a href="https://www.youtube.com/" target="_blank" > A sample link </a> <!-- One way-->
+<video width="350" height="260" controls>
+  <source src="https://www.youtube.com/watch?v=hhHTUMQcWpI" type="video/mp4">
+  <source src = "httpmp5" type="video/webm">
+  <embed src = "" width = "350" height="260">
+    this is sample video. Browser doesn't support this
+</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hhHTUMQcWpI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<!-- audio -->
+<audio controls>
+  <source src = "">
+  <embed src ="">
+    This is sample video
+</audio>
+<source 
   </body>
-</html>
+</html> 

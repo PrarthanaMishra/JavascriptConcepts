@@ -1,9 +1,255 @@
-prpertiesIKnow {
-  text-transform: lowercase;
-  color: red;
-  letter-spacing: 0ch;
-  font-weight: 2px
-}
-measurement available in css are 
-absoulte - inches, centimeters, points 
-relative - percentages and em
+/* css comments */
+
+#sample1 {text-decoration: underline}
+.sample2 {
+  text-decoration: line-through;
+  text-align: justify;
+  font-family: 'Courier New'
+ }
+#sample3 {
+  text-decoration: overline;
+   text-transform: lowercase;
+   text-align: left;
+   font-family: 'Times New Roman'
+  }
+#sample4 {
+  text-decoration: underline;
+   text-transform: capitalize;
+   text-align: right
+  }
+#sample5 {
+  /*These css are for text*/
+  text-decoration: none;
+  text-indent: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em; /* We should use em value */
+  letter-spacing: 5pt;
+  line-height: 2.0;
+  color : purple
+  }
+
+  /* Difference between align-left and align-justify*/
+  /* Margins */
+
+  #sample5 {
+    margin-left: 20px;
+    margin-right: 60px;
+    padding : 0px;
+    color: blue;
+    background-color: red;
+    border: thick navy;
+    border-radius: 20px;
+  }
+ a:link { color: green}
+ a:hover {color: yellow}
+ a:active {color: red}
+ a:visited {color: grey}
+ ol li {
+   list-style-type: none;
+   float : left;
+   border : 2px solid brown;
+ }
+ 
+ ul {
+   list-style-type: circle;
+ }
+ #big {
+   width: 200px;
+   height: 400px;
+   opacity: 0.5;
+   float: right;
+ }
+ div {
+   width : 50%;
+   white-space: nowrap;
+   border: thin groove red;
+   padding: 10px;
+ }
+ #shadow {
+   text-shadow: 1pt 1pt 1pt blue;
+ }
+ body {
+   background-image: url(https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=otinysrgb&dpr=1&w=500);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+ }
+ div.img {
+   margin: 5px;
+   padding: 5px;
+   border: 1px solid blue;
+   height: auto;
+   width: auto;
+   float: left;
+   text-align: center;
+   position: fixed;
+   z-index: -1;
+ }
+
+ /*margin only controls size all over body if we want to use specific value then margin top
+ Difference between display and visibility
+ display - can be used to hide a element or display as block or inline
+ */
+ p.one {
+   width: 300px;
+   margin-top: 10px;
+   margin-left: 20px;
+   margin-right: 30px;
+   margin-bottom: 40px;
+   padding-left : 10px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+   background-color: aquamarine;
+   border-width: 2px;
+   border-color: blue;
+   border-top-style: dotted;
+   border-right-style: dashed;
+   border-bottom-style: solid;
+   border-left-style: double;
+   outline-style: double;
+   outline-width: 5px;
+   outline-color : red
+ }
+ #one {
+   display: inline;
+ }
+ #two {
+   visibility: hidden;
+ }
+ #inline {
+   display: inline;
+ }
+ h2 {
+   color: black;
+   width: 150px;
+   min-height: 150px;
+ }
+ .nested {
+   color: blue;
+ }
+ .nested p {
+   color: aquamarine;
+   width: 150px;
+   min-height: 150px;
+ }
+ #fixed {
+  position: fixed;
+  top: 5px;
+  right: 100px;
+ }
+ #relative {
+   position: relative;
+  top: -10px;
+  right: 10px;
+
+ }
+ #absolute {
+  position: absolute;
+  left : 100px;
+  top: 350px;
+ }
+ .imgfixed {
+  position: fixed;
+  top : 2px;
+  left : 2px;
+  z-index: -1;
+  width: 100px;
+ }
+ p:first-line {
+   color: chartreuse
+ }
+ ol li:first-letter {
+   color: darkmagenta
+ }
+ vertnav {
+   list-style-type: none;
+   padding: 0px;
+   margin: 0px;
+ }
+ li {
+   display: inline;
+   width: 80px;
+   background-color: aqua;
+ }
+ table {
+   border-collapse: collapse;
+ }
+ table, th, td {
+   border: 2px solid palevioletred;
+ }
+ th {
+   background-color: green;
+   text-align: center;
+   vertical-align: top;
+   height : 600px;
+   padding: 10px;
+   background: linear-gradient(#bc581e, #e27b36);
+
+  }
+ td {
+   background-color: antiquewhite;
+   vertical-align: center;
+   text-align: right;
+   padding: 20px;
+   height : 500px; }
+  
+  div.transform {
+    width: 200px;
+    height: 300px;
+    color : green;
+    background-color: yellow;
+    transform: translate(-100px);
+    float: right;
+    -webkit-transform: translate(-100px);
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+  div.transitions {
+    height: 100px;
+    width: 200px;
+    color: white;
+    transition: width height;
+    transition-duration: 2s;
+    background: blue;
+  }
+  div:hover {
+    width: 1000px;
+    height : 200px;
+  }
+  div.animations {
+    width: 100px;
+    height : 200px;
+    color: aqua;
+    background: red;
+    position: relative;
+    animation: myfirst 5s infinite;
+  }
+  @keyframes myfirst {
+    0% {
+      background: red;
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      background: green;
+      left : 200px;
+      top : 0px;
+    }
+    50%{
+      background: yellow;
+      left : 200px;
+      top : 200px;
+    }
+    75% {
+      background: black;
+      left : 0px;
+      top : 200px;
+    }
+    100% {
+      background: brown;
+      left : 0px;
+      top : 0px;
+    }
+  }
+

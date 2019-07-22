@@ -1,0 +1,10 @@
+use db - // It will create data even it doesn't exist
+
+show dbs is not showing all the databases
+Reason for that -
+    if user doesn't create any collection or add user to newly created database, mongodb doesn't show newly created database when "show dbs" command is issued.
+
+Why collection was not showing up even after creating them by code
+  Ans : It's because in config.js file, model was not pointing to the correct DB
+
+
