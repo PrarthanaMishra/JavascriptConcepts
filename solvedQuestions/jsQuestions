@@ -153,10 +153,18 @@ function sumFinder(arr, sum) {
       }
       return count;
     }
-14.  How can you match substring of a string?
-    function matchStringWithSubString () {
-
+14.  Find a substring for a string mostly array?
+  Array.prototype.allsubstring = function() {
+    let substArr = []
+    for(let i =0; i< this.length; i++) {
+      for(let j= 0; j<this.length; j++) {
+        substArr.push(thiis.slice(i,j));
+      }
     }
+    return substArr;
+  }
+  [1,2,3,4].allsubstring();
+    
     
 15. How would you create all permutation of a string?
     function permutationString (str) {
@@ -266,4 +274,14 @@ function sumFinder(arr, sum) {
     - Arrow functions are incapable for binding.
     - call apply bind doesn't have any effect on them.
   -  But arrow functions do not have a prototype property and they cannot be used with new.
-            
+
+30. What multiple arrow functions means?
+ans : Check out the following links
+  const a = c => d => ({
+    
+  }
+    https://stackoverflow.com/questions/32782922/what-do-multiple-arrow-functions-mean-in-javascript
+31. Sorting array of objects.
+  array.sort(function(a,b) {
+    return a.libraryID - b.libraryID;
+  })
