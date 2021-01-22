@@ -31,9 +31,6 @@ ConsumerProduct.fetchPlanQuestions = async function(data) {
   let c = 2;
   let planResponse = await getplanQuestions(data) // await on promise
   return planResponse; 
-  console.log(res.body);
-  console.log("cccccccccccccccc");
-  console.log(c);
 }
 
 function getplanQuestions(data) {

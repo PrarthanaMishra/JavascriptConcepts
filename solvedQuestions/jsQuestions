@@ -8,6 +8,7 @@ https://medium.com/front-end-weekly/tic-tac-toe-javascript-game-b0cd6e98edd9
 1. Write a JavaScript program to display the current day and time in the following format.
     Sample Output : Today is : Tuesday. 
     Current time is : 10 PM : 30 : 38
+https://medium.com/@sub.metu/advanced-data-manipulation-javascript-b309fd008c6d
 
 Ans : let date = new Date();
   console.log('Today is : ' + date.getDay());
@@ -285,3 +286,94 @@ ans : Check out the following links
   array.sort(function(a,b) {
     return a.libraryID - b.libraryID;
   })
+
+
+
+const add = x => y => x + y;
+const sub = (f) => f(10);
+const mul = (x) => x * 3;
+const div = (x) => x / 4;
+const arr = [add, sub, mul, div];
+
+const composer = (x, f) => f(x);
+const master = methods => x => methods.reduce(composer, x);
+
+const main = master(arr);
+console.log(main(10));
+
+
+
+const add = x => x => x + 5;
+const sub = (x) => x() - 1;
+const mul = (x) => x * 3;
+const div = (x) => x / 4;
+const arr = [add, sub, mul, div];
+
+const composer = (x, f) => f(x);
+const master = methods => x => methods.reduce(composer, x);
+
+const main = master(arr);
+console.log(main(10));
+
+
+const add = (x) => x+5;
+const sub = (x) => x-1;
+const mul = (x) => x*3;
+const div = (x) => x/4;
+const arr = [add, sub, mul, div];
+
+const merge = m => {
+    let res = m;
+    for(let i =0; i<arr.length; i++) {
+        res = arr[i](res); 
+        return res;       
+    }
+    return res;
+}
+
+const sum = (x) => x => x+10;
+const sub = (x) => x()-5;
+const mul = (x) => x*2;
+const div = (x) => x/2;
+const arr = [sum, sub, mul, div];
+
+const merge = (arr)=>{
+    return (m)=> {
+      let res = m;
+        for(let i =0; i<arr.length;i++){
+          res = arr[i](res);
+       }
+       return res;
+  }
+}
+
+const master = merge(arr);
+console.log(master(10))
+
+
+
+const add = (x) => x + 5;
+const sub = (x) => x - 1;
+const mul = (x) => x * 3;
+const div = (x) => x / 4;
+const arr = [add, sub, mul, div];
+
+const composer = (f, g) => (x) => g(f(x));
+const master = methods => methods.reduce(composer);
+console.log(master(arr)(10));
+
+
+const add = (x) => x + 5;
+const sub = (x) => x - 1;
+const mul = (x) => x * 3;
+const div = (x) => x / 4;
+const arr = [add, sub, mul, div];
+
+const composer = (f, g) => (x) => g(f(x));
+const master = methods => methods.reduce(composer);
+console.log(master(arr)(10));
+
+
+
+
+
