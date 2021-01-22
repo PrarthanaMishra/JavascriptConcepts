@@ -55,5 +55,13 @@ what is sharding and replication in mongodb?
 what is redis? Implement redis?
 what is bind?  
 
+13th sep 2019
+Difference between call and bind?
+Difference between properties and attributes
+Difference html5 and Before 
+How will you create cookie?
+
+
+
 
 
