@@ -5,3 +5,4 @@ CoderByte
 https://www.interviewcake.com/javascript-interview-questions
 
 http://www.thatjsdude.com/interview/js1.html
+http://www.thatjsdude.com/interview/js2.html

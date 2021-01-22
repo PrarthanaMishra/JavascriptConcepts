@@ -26,7 +26,11 @@ MySql Beta connection
 MySql Prod connection 
 
 Redis Beta && stage connection 
+<<<<<<< HEAD
     sudo ssh -i HOMETOWN_STAGING.pem  -f -N -L6381:172.31.24.165:6000 ubuntu@13.232.175.105
+=======
+    sudo ssh -i HOMETOWN_STAGING.pem  -f -N -L6382:172.31.24.165:6000 ubuntu@13.232.175.105
+>>>>>>> 0820135c315b709defa367db6bfa744df173a91e
     sudo ssh -i HT-BETA.pem -f -N -L6382:172.31.24.165:6000 ubuntu@13.232.183.147
     sudo ssh -i HOMETOWN_STAGING.pem   ubuntu@13.232.175.105
     redis-cli 
@@ -67,6 +71,11 @@ mysql -u hometowndb_beta -p -h hometowndb-replica-cluster.cluster-c7vqbmwekhge.a
 
 mysql -u hometowndb_beta -p -h hometowndb-replica-cluster.cluster-c7vqbmwekhge.ap-south-1.rds.amazonaws.com
 
+<<<<<<< HEAD
+=======
+1472635
+
+>>>>>>> 0820135c315b709defa367db6bfa744df173a91e
 
         
 
